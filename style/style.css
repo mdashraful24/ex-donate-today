@@ -2,8 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
 body {
     font-family: "Inter", sans-serif;
+    background-color: rgba(202, 200, 200, 0.201);
     /* border: 2px solid red; */
 }
 
@@ -25,7 +29,6 @@ body {
     border-radius: 5px;
     background: rgb(255, 89, 89);
     cursor: pointer;
-    /* padding: 16px 12px 16px 12px; */
 }
 
 .hide {
@@ -77,7 +80,6 @@ body {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 80px;
-    /* padding: 20px; */
 }
 
 .donate-contents h3 {
@@ -95,7 +97,6 @@ body {
 }
 
 .box {
-    /* border: 2px solid red; */
     width: 650px;
     margin: 0 auto;
     display: grid;
@@ -160,7 +161,6 @@ body {
 }
 
 .card-box {
-    /* border: 2px solid rgb(44, 6, 6); */
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -187,8 +187,7 @@ body {
 .pri-card-box-1,
 .pri-card-box-2,
 .pri-card-box-3 {
-    /* border: 2px solid red; */
-    width: 320px;
+    width: 302px;
     min-height: 300px;
     text-align: left;
     border-radius: 5px;
@@ -205,6 +204,155 @@ body {
 
 .pri-card-box-3 {
     background: rgba(252, 123, 123, 0.26);
+}
+
+/* Tow card style */
+.two-card-container {
+    /* border: 2px solid red; */
+    min-height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.card-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 40px;
+}
+
+.card-1 {
+    margin-bottom: 80px;
+}
+
+.card-img img {
+    width: 400px;
+    min-height: 300px;
+    border-radius: 5px;
+    filter: brightness(90%);
+}
+
+.card-description {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.card-description h3 {
+    color: rgb(18, 18, 18);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.card-description p {
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#card-btn {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 18px 14px 18px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(255, 89, 89);
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+/* Update style */
+.update-container {
+    /* border: 2px solid red; */
+    min-height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 5px;
+}
+
+.update-contents h3 {
+    color: rgb(18, 18, 18);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.update-contents p {
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 14px auto 40px auto;
+}
+
+.btn-gap {
+    width: 780px;
+    margin: 0 auto;
+    padding: 50px 20px 50px 20px;
+    background: rgb(255, 244, 214);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#email {
+    width: 275px;
+    height: 50px;
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    background: rgb(217, 217, 217);
+    padding: 15px;
+}
+
+#subscribe {
+    width: 157px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background: rgb(255, 89, 89);
+    cursor: pointer;
+}
+
+/* Footer style */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(11, 13, 23);
+    padding: 30px 20px 20px 20px;
+}
+
+.footer-contents h3 {
+    color: rgb(255, 89, 89);
+    font-family: Lobster;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.footer-contents p {
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 24px auto;
 }
 
 
@@ -224,17 +372,8 @@ body {
 
     .box {
         width: 100%;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding: 20px;
-    }
-
-    /* Common style */
-    br {
-        display: none;
-    }
-
-    .donate-container hr {
-        width: 90%;
     }
 
     /* Donate plan */
@@ -243,8 +382,121 @@ body {
         margin: 0 auto;
     }
 
-    .card-box {
+    .card-box,
+    .card-div {
         flex-direction: column;
     }
 
+    .pri-card-box-1,
+    .pri-card-box-2,
+    .pri-card-box-3 {
+        width: 90%;
+    }
+
+    /* Two card style */
+    .two-card-container {
+        padding: 20px;
+    }
+
+    .card-img img {
+        width: 100%;
+    }
+
+    #card-box-2 {
+        flex-direction: column-reverse;
+    }
+
+    .card-1 {
+        margin-bottom: 40px;
+    }
+
+    /* Update style */
+    .update-container {
+        width: 93%;
+    }
+
+    .btn-gap {
+        width: 100%;
+    }
+
+    #email {
+        width: 150px;
+    }
+
+    #subscribe {
+        width: 100px;
+    }
+
+    /* Common style */
+    br {
+        display: none;
+    }
+
+    #br {
+        display: block;
+    }
+
+    .donate-container hr {
+        width: 90%;
+    }
+}
+
+/* Medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .update-container,
+    .two-card-container,
+    .donate-plan-container,
+    .donate-container {
+        padding: 20px;
+    }
+
+    .banner-contents,
+    .donate-contents,
+    .plan-contents,
+    .update-contents {
+        width: 93%;
+        margin: 0 auto;
+    }
+
+    .box {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-box,
+    .card-div {
+        flex-direction: column;
+    }
+
+    .pri-card-box-1,
+    .pri-card-box-2,
+    .pri-card-box-3 {
+        width: 100%;
+    }
+
+    .card-img img {
+        width: 100%;
+    }
+
+    #card-box-2 {
+        flex-direction: column-reverse;
+    }
+
+    .btn-gap {
+        width: 100%;
+    }
+
+    /* Common style */
+    br {
+        display: none;
+    }
+
+    #br {
+        display: block;
+    }
+
+    .donate-container hr {
+        width: 90%;
+    }
 }
